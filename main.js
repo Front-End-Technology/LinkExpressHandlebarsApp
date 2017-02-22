@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/products', function (req, res) {
-	console.log("test");
+	console.log("test123");
     res.render('products',jsondata);
 });
 
