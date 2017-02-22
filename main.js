@@ -8,13 +8,13 @@ var jsondata = {"productList" : [{"name" : "IPhone", "price" : "450" ,"img" : "h
 app.engine('handlebars', exphbs({defaultLayout: 'index',partialsDir : __dirname + '/views'}));
 app.set('view engine', 'handlebars');
 
-app.get('/', function (req, res) {
-    console.log("test");
+app.get('/', function (req, res) {    
     res.render('home');
 
 });
 
 app.get('/products', function (req, res) {
+	console.log("test");
     res.render('products',jsondata);
 });
 
