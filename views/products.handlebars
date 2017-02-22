@@ -1,0 +1,15 @@
+<div>
+<a href="/">Home Page</a><br><br>
+<h2>Here is your products list::</h2>
+<a href="/phone">Phone</a><br>
+<a href="/laptop">Laptop</a><br>
+<a href="/ipad">IPad</a><br>
+<a href="/tv">TV</a><br>
+</div>
+
+<div>
+<h1>Products</h1>
+{{#each productList}}
+ <div> <a href="productdetails/{{name}}">{{name}} </a>(${{price}})</div>
+ {{/each}}
+</div>
