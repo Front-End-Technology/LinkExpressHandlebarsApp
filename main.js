@@ -9,7 +9,9 @@ app.engine('handlebars', exphbs({defaultLayout: 'index',partialsDir : __dirname 
 app.set('view engine', 'handlebars');
 
 app.get('/', function (req, res) {
+    console.log("test");
     res.render('home');
+
 });
 
 app.get('/products', function (req, res) {
